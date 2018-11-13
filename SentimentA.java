@@ -10,7 +10,8 @@ public class SentimentA {
 		twitter.setOAuthAccessToken(accessToken);
 		Query query = new Query("text to search for");
         QueryResult result = twitter.search(query);
-        
+		
+        //hola puta
 		for (Status status : result.getTweets()) {
 			System.out.println("@" + status.getUser().getScreenName() + ":" + status.getText());
 		}
